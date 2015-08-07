@@ -1,0 +1,56 @@
+body {
+  padding-top:50px;
+  text-align: center;
+  font-size: 1em;
+  box-sizing:border-box;
+}
+
+.nav {
+  background:black;
+  padding:10px;
+  position:fixed;
+  box-shadow: 0 0 10px #999;
+  top:0;
+  left:0;
+  right:0;
+  color:white;
+}
+
+.nav select {
+  font-size:20px;
+  width:200px;
+  border:2px solid #ddd;
+}
+
+.nav select option {
+  text-transform:capitalize;
+}
+
+.calendar_wrap{
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.calendar_cell {
+  border:1px solid #ddd;
+  width:10%;
+  height: 100px;
+  padding:10px;
+  font-size:1em;
+  display: inline-block;
+  text-align: center;
+}
+
+.inner_cell{
+  width: 100%;
+  height: 100%;
+  padding:5px;
+}
+
+.inner_cell.outer {
+  background:#aaa;
+}
+
+
