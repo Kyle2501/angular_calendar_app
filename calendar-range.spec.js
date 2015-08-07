@@ -1,20 +1,6 @@
 describe('CalendarRange', function() {
 
-  beforeEach(function() {
-    this.addMatchers({
-      toMatchDate: function(expected) {
-        if(typeof expected == 'string') {
-          var date = expected.split('-');
-          expected = new Date(date[0], date[1], date[2]);
-        }
 
-        var actual = this.actual;
-        return actual.getMonth()    == expected.getMonth()    &&
-               actual.getFullYear() == expected.getFullYear() &&
-               actual.getDate()     == expected.getDate();
-      }
-    });
-  });
 
   it('should return the proper object for the given date', function() {
     var date = new Date();
@@ -34,10 +20,10 @@ describe('CalendarRange', function() {
 
     var range = CalendarRange.getMonthlyRange(date);
 
-    expect(range.first) .toMatchDate('2014-0-26');
-    expect(range.start) .toMatchDate('2014-1-1');
-    expect(range.end)   .toMatchDate('2014-1-28');
-    expect(range.last)  .toMatchDate('2014-2-1');
+    expect(range.first) .toEqual(new Date('2014-1-26'));
+    expect(range.start) .toEqual(new Date('2014-2-1'));
+    expect(range.end)   .toEqual(new Date('2014-2-28'));
+    expect(range.last)  .toEqual(new Date('2014-3-1'));
 
     expect(range.days.length).toBe(35);
 

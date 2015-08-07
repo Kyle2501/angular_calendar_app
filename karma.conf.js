@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Wed Jul 16 2014 15:23:43 GMT-0400 (EDT)
+// Generated on Fri Aug 07 2015 13:30:09 GMT-0500 (CDT)
 
 module.exports = function(config) {
   config.set({
@@ -22,14 +22,12 @@ module.exports = function(config) {
 
     // list of files to exclude
     exclude: [
-      
     ],
 
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-    
     },
 
 
@@ -64,5 +62,5 @@ module.exports = function(config) {
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
     singleRun: false
-  });
-};
+  })
+}
